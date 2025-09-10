@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pradeep S - Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: 'Poppins', sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6;}
+    a {color: #00d084; text-decoration: none; transition: 0.3s;}
+    a:hover {color: #00ffae;}
+
+    header {display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 5%; background: #0b0f19; position: sticky; top: 0; z-index: 10;}
+    header .logo {font-size: 1.5rem; font-weight: 700; color: #00d084;}
+    nav a {margin: 0 15px; font-weight: 600;}
+    nav a:hover {color: #00ffae;}
+
+    .hero {display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 4rem 5%; background: linear-gradient(135deg, #0f1624, #0d1117);}
+    .hero-text {flex: 1; min-width: 300px;}
+    .hero-text h1 {font-size: 2.5rem; margin-bottom: 1rem;}
+    .hero-text h1 span {color: #00d084;}
+    .hero-text p {font-size: 1.1rem; color: #9ba1a6; margin-bottom: 1.5rem;}
+    .hero-text .btn {background: #00d084; color: #0d1117; padding: 0.7rem 1.5rem; border-radius: 6px; font-weight: 600; margin-right: 10px;}
+    .hero-text .btn:hover {background: #00ffae;}
+    .hero img {width: 280px; height: 280px; border-radius: 50%; border: 4px solid #00d084; box-shadow: 0 0 20px rgba(0,208,132,0.4);}
+
+    section {padding: 4rem 5%; max-width: 1100px; margin: auto;}
+    h2 {color: #00d084; margin-bottom: 2rem; font-size: 2rem; text-align: center;}
+
+    .grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;}
+    .card {background: #161b22; padding: 1.5rem; border-radius: 12px; transition: transform 0.3s, box-shadow 0.3s;}
+    .card:hover {transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.4);}
+    .card h3 {margin-bottom: 0.8rem;}
+    .card p {color: #9ba1a6;}
+
+    .contact {text-align: center;}
+    .contact p {margin-bottom: 0.5rem;}
+
+    footer {background: #0b0f19; padding: 1rem; text-align: center; color: #9ba1a6; font-size: 0.9rem; margin-top: 2rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Pradeep S</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Pradeep S</span></h1>
+      <p>Cybersecurity Intern specializing in Penetration Testing, Vulnerability Assessment, and Ethical Hacking. Passionate about protecting digital environments and building secure systems.</p>
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <div class="hero-img">
+      <img src="profile.jpg" alt="Pradeep S">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Cybersecurity Intern with hands-on experience in penetration testing, vulnerability assessment, SIEM, and MDR. Skilled in tools like Metasploit, Nessus, Burp Suite, and Wireshark. I’m enthusiastic about ethical hacking, phishing simulation, and building strong defenses against cyber threats.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>Pen Testing Tools</h3><p>Metasploit, Nessus, Burp Suite, OWASP Top 10</p></div>
+      <div class="card"><h3>Network Security</h3><p>Firewalls, IDS, IPS, TCP/IP, Wireshark, OSI Model</p></div>
+      <div class="card"><h3>Operating Systems</h3><p>Kali Linux, Windows</p></div>
+      <div class="card"><h3>VAPT</h3><p>Vulnerability Scanners, CVE Analysis, EDR, VPN</p></div>
+      <div class="card"><h3>Social Engineering</h3><p>Email Security, Phishing Countermeasures</p></div>
+      <div class="card"><h3>Scripting</h3><p>Basic Python for Automation</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Broken Link Hijacking (BLH)</h3>
+        <p>Identified vulnerabilities by detecting broken links and unclaimed subdomains. Simulated hijacking attacks and recommended fixes.</p>
+      </div>
+      <div class="card">
+        <h3>Cowrie SSH Honeypot (Python)</h3>
+        <p>Deployed a Cowrie honeypot to capture SSH login attempts, analyze attacker behavior, and collect threat intelligence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Internship Experience</h2>
+    <div class="card">
+      <p><strong>Cybersecurity Intern – Elevate Labs (Aug 2025 – Present)</strong></p>
+      <ul>
+        <li>Performed vulnerability scanning and penetration testing tasks.</li>
+        <li>Applied ethical hacking concepts in real-time projects.</li>
+        <li>Worked on phishing simulation and security awareness.</li>
+        <li>Documented findings and recommended mitigations.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certs">
+    <h2>Certifications</h2>
+    <div class="grid">
+      <div class="card"><p>Cybersecurity & Ethical Hacking – Boston Institute of Analytics (Mar 2025)</p></div>
+      <div class="card"><p>Cybersecurity Job Simulation – Forage (Aug 2025)</p></div>
+      <div class="card"><p>Cybersecurity Assessment – Learn Tube (Jan 2025)</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:thagavaipradeep@gmail.com">thagavaipradeep@gmail.com</a></p>
+    <p>Phone: +91 6369945156</p>
+    <p>GitHub: <a href="https://github.com/pradeep370" target="_blank">github.com/pradeep370</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/pradeep-s-pradeep/" target="_blank">linkedin.com/in/pradeep-s-pradeep</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Pradeep S | Cybersecurity Portfolio</p>
+  </footer>
+</body>
+</html>
